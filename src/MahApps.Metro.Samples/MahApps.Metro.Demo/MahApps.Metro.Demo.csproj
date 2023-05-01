@@ -2,6 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <!-- Project properties -->
     <PropertyGroup>
+        <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
         <AssemblyName>MahApps.Metro.Demo</AssemblyName>
         <RootNamespace>MetroDemo</RootNamespace>
         <DisableFody Condition=" '$(Configuration)' == 'Debug' ">true</DisableFody>
@@ -12,10 +13,6 @@
         <ApplicationIcon>mahapps.metro.logo2.ico</ApplicationIcon>
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\MahApps.Metro\MahApps.Metro.csproj" />
-    </ItemGroup>
 
     <ItemGroup>
         <None Include="app.manifest" />
@@ -35,6 +32,10 @@
         <PackageReference Include="MahApps.Metro.IconPacks.Octicons" />
         <PackageReference Include="NHotkey.Wpf" />
         <PackageReference Include="Microsoft.Web.WebView2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\MahApps.Metro\MahApps.Metro.csproj" />
     </ItemGroup>
 
     <ItemGroup>

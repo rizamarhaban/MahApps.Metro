@@ -7,11 +7,11 @@
 
     <!-- Project properties -->
     <PropertyGroup>
-        <TargetFrameworks>net462;net47;net48;netcoreapp3.1;net5.0-windows;net6.0-windows</TargetFrameworks>
+        <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
         <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <AutoGenerateBindingRedirects Condition="$(DefineConstants.Contains(NETCOREAPP)) == false">true</AutoGenerateBindingRedirects>
-        <LangVersion>latestmajor</LangVersion>
+        <LangVersion>latest</LangVersion>
         <NoWarn>$(NoWarn);CS1591</NoWarn>
         <NoError>$(NoError);CS1591</NoError>
         <UseWPF>true</UseWPF>

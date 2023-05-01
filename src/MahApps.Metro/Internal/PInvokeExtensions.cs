@@ -6,7 +6,8 @@
 
 namespace Windows.Win32;
 
-using System.Runtime.CompilerServices;
+using global::System.Runtime.CompilerServices;
+
 using Windows.Win32.Foundation;
 
 internal static class PInvokeExtensions
